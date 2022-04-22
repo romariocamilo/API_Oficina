@@ -1,0 +1,32 @@
+[
+  {
+    "IdVeiculo": 1,
+    "Tipo": "string",
+    "Modelo": "string",
+    "IdCliente": 0
+  },
+  {
+    "IdVeiculo": 1,
+    "Tipo": "carro",
+    "Modelo": "gol",
+    "IdCliente": 1
+  },
+  {
+    "IdVeiculo": 2,
+    "Tipo": "carro",
+    "Modelo": "saveiro",
+    "IdCliente": 1
+  },
+  {
+    "IdVeiculo": 2,
+    "Tipo": "moto",
+    "Modelo": "Hornet",
+    "IdCliente": 1
+  },
+  {
+    "IdVeiculo": 2,
+    "Tipo": "moto",
+    "Modelo": "Hornet",
+    "IdCliente": 2
+  }
+]

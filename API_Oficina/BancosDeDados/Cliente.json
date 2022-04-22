@@ -1,0 +1,15 @@
+[
+  {
+    "IdCliente": 1,
+    "Nome": "Romário",
+    "Sobrenome": "Camilo",
+    "Idade": 27,
+    "DataDeNascimento": {
+      "Dia": 3,
+      "Mes": 5,
+      "Ano": 1994
+    },
+    "Email": "teste@teste.com",
+    "Telefone": "34996791318"
+  }
+]

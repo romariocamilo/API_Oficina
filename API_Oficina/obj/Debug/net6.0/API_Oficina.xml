@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_Oficina</name>
+    </assembly>
+    <members>
+        <member name="M:API_Oficina.Controllers.ClienteController.RetornaClientes">
+            <summary>
+            Lista todos os clientes do banco de dados
+            </summary>
+            <returns>Clientes retornados</returns>
+            <response code="200">Retorna todos os clientes cadastrados no banco de dados</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.ClienteController.RetornaUmCliente(System.Int32)">
+            <summary>
+            Lista um determinado clinte pelo id
+            </summary>
+            <param name="id"></param>
+            <returns>Cliente retornado</returns>
+            <response code="200">Retorna um determinado cliente cadastrado no banco de dados</response>
+            <response code="400">Se o cliente não estiver cadastrado no banco de dados</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.ClienteController.CadastraCliente(API_Oficina.Modelos.Cliente)">
+             <summary>
+             Cadastra um novo cliente
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 {
+                    "nome": "Romário",
+                    "sobrenome": "Camilo",
+                    "dataDeNascimento": {
+                       "dia": 3,
+                       "mes": 5,
+                       "ano": 1994
+                     },
+                    "email": "teste@teste.com",
+                    "telefone": "34996791318"
+                 }
+             </remarks>
+             <param name="novoCliente"></param>
+             <returns>Novo cliente cadastrado</returns>
+             <response code="200">Retorna o novo cliente cadastrado</response>
+             <response code="400">Se o cliente não for criado</response>
+             <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.ClienteController.AtualizaCliente(API_Oficina.Modelos.Cliente,System.Int32)">
+             <summary>
+             Atualiza um cliente
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 PUT
+                 {
+                    "nome": "Romário",
+                    "sobrenome": "Camilo",
+                    "dataDeNascimento": {
+                       "dia": 3,
+                       "mes": 5,
+                       "ano": 1994
+                     },
+                    "email": "teste@teste.com",
+                    "telefone": "34996791318"
+                 }
+             </remarks>
+             <param name="clienteAtualizado"></param>
+             <param name="id"></param>
+             <returns>Cliente atualizado</returns>
+             <response code="200">Retorna o cliente atualizado</response>
+             <response code="400">Se o cliente não for atualizado</response>
+             <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.ClienteController.DeletaCliente(System.Int32)">
+            <summary>
+            Deleta um cliente
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Deleta cliente com sucesso</response>
+            <response code="400">Se o cliente não existir no banco de dados</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.ClienteController.DeletaTodosClientes">
+            <summary>
+            Deleta todos os clientes do banco de dados
+            </summary>
+            <returns></returns>
+            <response code="200">Deleta todos os clientes com sucesso</response>
+            <response code="400">Se o banco de dados de clientes já estiver vazio</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.VeiculoController.RetornaClientes">
+            <summary>
+            Lista todos os veiculos do banco de dados
+            </summary>
+            <returns>Veiculos retornados</returns>
+            <response code="200">Retorna todos os veiculos cadastrados no banco de dados</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.VeiculoController.RetornaUmVeiculo(System.Int32)">
+            <summary>
+            Lista um determinado veiculo pelo id
+            </summary>
+            <param name="id"></param>
+            <returns>Veiculo retornado</returns>
+            <response code="200">Retorna um determinado veiculo cadastrado no banco de dados</response>
+            <response code="400">Se o veiculo não estiver cadastrado no banco de dados</response>
+            <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+        <member name="M:API_Oficina.Controllers.VeiculoController.CadastraVeiculo(API_Oficina.Modelos.Veiculo)">
+             <summary>
+             Cadastra um novo veiculo
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 {
+                     "tipo": "string",
+                     "modelo": "string",
+                     "idCliente": 0
+                 }
+             </remarks>
+             <param name="novoVeiculo"></param>
+             <returns>Novo veiculo cadastrado</returns>
+             <response code="200">Retorna o novo veiculo cadastrado</response>
+             <response code="400">Se o veiculo não for criado</response>
+             <response code="500">Se uma exceção não tratada estourar</response>
+        </member>
+    </members>
+</doc>

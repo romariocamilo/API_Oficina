@@ -1,0 +1,8 @@
+[
+  {
+    "IdVeiculo": 1,
+    "Tipo": "string",
+    "Modelo": "string",
+    "IdCliente": 0
+  }
+]
